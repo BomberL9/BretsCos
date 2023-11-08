@@ -142,7 +142,7 @@ section{
 button{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: var(--beige-color);
   border-radius: 10px;
