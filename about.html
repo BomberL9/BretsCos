@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <!--Import de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Título e favicon -->
+    <title>Bret's Cosméticos</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Início</a>
+      <a href="about.html">Sobre Nós</a>
+      <a href="social.html">Redes Sociais</a>
+    </div>
+    <div id="main">
+      <header>
+        <div class="header-beginning">
+          <img src="assets/menu.png" id="menu-icon" onclick="openNav()">
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+          <h1 id="title" translate="no">Bret's Cosméticos</h1>
+        </div>
+        <div>
+          <button id="cep-button" type="button" onclick="alert('Esta empresa é fictícia. Não precisamos do seu CEP!')">
+            <ion-icon name="location-sharp"></ion-icon>
+            <p>Informe<br>seu CEP</p>
+          </button>
+        </div>
+      </header>
+      <h1 id="subtitle">Sobre Nós</h1>
+      <section>
+        <article>
+          <p>
+            A <b>Bret's Cosméticos</b> teve origem em um dos eventos da Escola Bretanha,<br>uma escola renomada na Ilha do
+          Governador, em que os alunos fundaram essa empresa fictícia<br>para promover produtos originários da grande 
+          Floresta Amazônica. Nossa escola surgiu<br>em 1967 e, inicialmente, tinha apenas a educação infantil, o Jardim 
+          Tio Careca. Hoje em dia,<br>o Bretanha tem um dos melhores ensinos da <i>Ilha</i> e está sempre melhorando 
+          e crescendo.
+          </p>
+        </article>
+        <aside>
+          <img src="assets/bret.jpg" id="bretImg">
+        </aside>
+      </section>
+    </div>
+    <!--Ion-icons(manter no final de body)-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
